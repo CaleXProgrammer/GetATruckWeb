@@ -1,0 +1,203 @@
+@media (max-width: 1380px){
+    .whyPeopleChooseUs .body .rows{
+        flex-basis: 45%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul{
+        position: fixed;
+        flex-flow: column;
+        z-index: 1;
+        top: 0;
+        height: 100%;
+        background-color: var(--color-black);
+        width: 50%;
+        gap: 0.2em;
+        font-size: 2em;
+        right: 100%;
+        display: fixed;
+    }
+
+    #bar{
+        display: block;
+    }
+
+    nav ul li a{
+        font-size: 1em;
+    }
+
+    .show{
+        right: 0;
+    }
+
+    .trucksCurrentlyOnSale .body .rows{
+        flex-basis: 30%;
+    }
+
+    nav .bookNow a{
+        padding: 0.4em;
+    }
+}
+
+@media (max-width: 900px){
+    .trucksCurrentlyOnSale .body{
+        align-items: center;
+        justify-content: center;
+    }
+    .trucksCurrentlyOnSale .body .rows{
+        flex-basis: 50%;
+        align-items: center;
+        justify-content: center;
+        min-height: 25em;
+    }
+
+    
+    nav .bookNow a{
+        padding: 0.5em;
+        font-size: 0.7em;
+    }
+
+    .whyPeopleChooseUs .body{
+        flex-wrap: wrap;
+        flex-direction: column  ;
+    }
+}
+
+@media (max-width: 800px){
+    main .getAtruck .body{
+        flex-direction: column;
+    }
+
+    main .getAtruck .body .rows{        
+        min-height: 20em !important;
+        max-height: 20em !important;
+    }
+
+    .trucksCurrentlyOnSale .body .rows{
+        height: auto;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+
+    .contactUs form{
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        padding: 0.3em;
+    }
+
+    .contactUs form input{
+        width: 100% !important;
+    }
+
+    .contactUs form .rowBar{
+        flex-direction: column;
+    }
+
+    .home .img h1{
+        font-size: 1.4em;
+    }
+
+    .home .img .btn p{
+        padding: 0.6em 0.5em;
+        color: #fff;
+        font-size: 0.8em;
+    }
+
+    nav ul li a{
+        text-align: center;
+        font-size: 0.7em;
+    }
+
+    #bar{
+        font-size: 1em;
+    }
+
+    #click{
+        font-size: 1em;
+    }
+
+    nav .tel{
+        margin: 0 0.6em;
+    }
+
+    nav .logo h1{
+        font-size: 1.4em;
+    }
+
+    main .getAtruck .body .rows h1{
+        font-size: 1em;
+    }
+
+    main{
+        padding: 1em 0.2em;
+    }
+}
+
+@media (max-width: 600px){
+    .trucksCurrentlyOnSale .body .rows a{
+        padding: 0.5em;
+    }
+/* 
+    nav .bookNow a{
+        display: none;
+    } */
+
+    nav .bookNow{
+        flex-basis: 20%;
+    }
+
+    nav .bookNow a{
+        padding: 0.5em;
+        font-size: 0.7em;
+    }
+
+    main .getAtruck header h1{
+        font-size: 1.3em;
+    }
+
+    .whyPeopleChooseUs header h1{
+        font-size: 1.3em;
+    }
+
+    .trucksCurrentlyOnSale header h1{
+        font-size: 1.3em;
+    }
+
+    .localMovingServicesAreas .california{
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 500px){
+    nav .bookNow a{
+        font-size: 0.39em;
+    }
+
+    #bar{
+        font-size: 1.2em;
+    }
+
+    nav .tel{
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 30%;
+        align-items: center;
+    }
+
+    nav{
+        padding: 1em 2em;
+    }
+
+    main{
+        margin: 1em 0;
+    }
+}
+
+@media (max-width: 330px){
+    nav .bookNow{
+        display: none;
+    }
+}

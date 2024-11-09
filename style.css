@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+:root{
+    --color-white: #fff;
+    --color-black: #000;
+    --color-red: red;
+    --color-gradient-black: rgba(0, 0, 0, 0.411);
+}
+
+.dark-color{
+    --color-white: #000;
+    --color-black: #fff;
+    --color-red: blue;
+    --color-gradient-black: rgba(255, 255, 255, 0.518);
+}
+
+header {
+    overflow: hidden;
+}
+
+header h1 {
+    position: relative;
+}
+
+body{
+    background-color: var(--color-white);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 4em;
+    background-color: var(--color-black);
+}
+
+nav i {
+    color: var(--color-white);   
+}
+
+nav .logo{
+    flex-basis: 20%;
+}
+
+nav .logo h1{
+    font-size: 2.4em;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    font-variant: small-caps;
+    color: red;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 37%;
+    gap: 0.5em;
+}
+
+nav ul li{
+    font-size: 1.1em;
+    font-weight: lighter;
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a {
+    color: var(--color-white);
+}
+
+nav ul li a::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    left: 100%;
+    bottom: 0;
+    top: 0.5em 0;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    left: 0;
+}
+
+nav .tel{
+    flex-basis: 10%;
+}
+
+nav .tel a{
+    color: var(--color-white);
+    font-weight: bolder;
+}
+
+nav .bookNow{
+    flex-basis: 16%;
+    width: 100%;
+}
+
+nav .bookNow a{
+    color: var(--color-white);
+    background-color: red;
+    border: 5px solid white;
+    padding: 1em 1.2em;
+    border-radius: 100px;
+}
+
+main{
+    margin: 1em 3em;
+    padding: 0;
+}
+
+.home{
+    height: 30em;
+    margin: 1em 0;
+}
+
+.home .img{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url('./Highwaytrucks.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1em;
+}
+
+.home .img h1{
+    color: var(--color-white);
+    font-family: Arial Black;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+.home .img .btn {
+    display: flex;
+    gap: 1em;
+}
+
+.home .img .btn p{
+    padding: 1em 1.5em;
+    background-color: red;
+    border-radius: 100px;
+    color: var(--color-white);
+    font-size: 1.2em;
+}
+
+.home .img .btn p:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-black);
+    transition: 0.3s;
+}
+
+main .getAtruck{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main .getAtruck header{
+    display: flex;
+    margin: 1em 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.getAtruck header h1::before{
+    content: '';
+    width: 50%;
+    height: 10px;
+    border-radius: 100px;
+    background-color: red;
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+}
+
+main .getAtruck header h1{
+    font-size: 2.3em;
+    font-family: Arial Black;
+    text-align: center;
+    color: var(--color-black);
+}
+
+main .getAtruck .body{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    overflow: hidden;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 192, 203, 0.688), rgba(255, 192, 203, 0.688)), url('./local-moving-2-1024x763.jpg');
+}
+
+main .getAtruck .body .rows{
+    flex-basis: 30%;
+}
+
+main .getAtruck .body .localMoving , main .getAtruck .body .longDistanceMoving{
+    flex-basis: 49% !important;
+}
+
+main .getAtruck .body .rows{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url('./img10.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+    width: 70%;
+    margin: 1em 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: var(--color-white);
+    font-family: Arial Black;
+    text-align: center;
+}
+
+main .getAtruck .body .rows:hover{
+   overflow: hidden;
+   scale: 1.1;
+   width: 100%;
+   transition: .3s;
+
+}
+
+main .getAtruck .body .longDistanceMoving{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url('./Highwaytrucks.jpg');
+}
+
+main .getAtruck .body .commercial{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url('./whitehomeoffice.jpg');
+    /* color: var(--color-black); */
+}
+
+main .getAtruck .body .packing {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url('./d4f8081d917643ed96bd.jpg');
+}
+
+.whyPeopleChooseUs{
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    background-color: var(--color-white);
+}
+
+.whyPeopleChooseUs header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10em;
+    position: relative;
+}
+
+.whyPeopleChooseUs header h1::before{
+    content: '';
+    width: 30%;
+    height: 10px;
+    border-radius: 100px;
+    background-color: red;
+    position: absolute;
+    bottom: -10px;
+    /* left: 25%; */
+    left: 30%;
+    color: var(--color-black);
+}
+
+.whyPeopleChooseUs header h1{
+    font-size: 2.3rem;
+    color: var(--color-black);
+    text-align: center;
+
+}
+
+.whyPeopleChooseUs .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.4em;
+    flex-wrap: wrap;
+    color: var(--color-black) !important;
+}
+
+.whyPeopleChooseUs .body .rows{
+    height: 100%;
+    padding: 1em 1em;
+    flex-basis: 30%;
+    background-color: var(--color-white);
+    box-shadow: 5px 5px 5px gray;
+    border: 1px solid gray;
+}
+
+.whyPeopleChooseUs .body .rows:hover{
+    background-color: hsl(0, 100%, 30%);
+    color: #fff;
+}
+
+.whyPeopleChooseUs .img{
+    height: 60px;
+    width: 60px;
+    margin: 0.5em 0;
+    background-color: #fff;
+}
+
+.whyPeopleChooseUs h1 {
+    font-size: 1.3rem;
+    color: var(--color-black);
+    font-weight: bolder;
+    margin: 0.7em 0;
+}
+
+.whyPeopleChooseUs p{
+    font-size: 1em;
+    color: var(--color-black);
+}
+
+.trucksCurrentlyOnSale {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    margin: 3em 0;
+    height: 100%;
+}
+
+.trucksCurrentlyOnSale header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.trucksCurrentlyOnSale header h1{
+    font-size: 2.3rem;
+    text-align: center;
+    color: var(--color-black);
+}
+
+.trucksCurrentlyOnSale .body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8em;
+    background-image: linear-gradient(rgba(102, 102, 252, 0.641), rgba(102, 102, 252, 0.641)), url('./img7.jpeg');
+    height: 100%;
+    padding: 1em 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.trucksCurrentlyOnSale .body .rows{
+    width: 100%;
+    height: 20rem;
+    min-height: 20rem;
+    max-height: 30rem;
+    flex-basis: 24%;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px gray;
+    background-color: var(--color-white);
+    position: relative;
+}
+
+.trucksCurrentlyOnSale .body .rows img{
+    width: 100%;
+    height: 55%;
+}
+
+.trucksCurrentlyOnSale .body .rows p {
+    font-size: 1.1em;
+    padding: 0.1em 1em;
+    color: var(--color-black);
+}
+
+.trucksCurrentlyOnSale .body .rows .best {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    rotate: 30%;
+    color: #fff;
+}
+
+.trucksCurrentlyOnSale .body .rows span {
+    display: flex;
+    padding: 0.3em 1em;
+}
+
+.trucksCurrentlyOnSale .body .rows i{
+    color: red;
+}
+
+.trucksCurrentlyOnSale .body  .rows a{
+    background-color: red;
+    color: var(--color-white);
+    padding: 0.5em 1em;
+    margin: 0 1em;
+    border-radius: 100px;
+}
+
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3em 0;
+}
+
+.contactUs form{
+    width: auto;
+    height: auto;
+    background-color: var(--color-white);
+    box-shadow: 3px 3px 3px  var(--color-black);
+    padding: 4em 3em;
+    border: 5px solid var(--color-black);
+}
+
+.contactUs form header{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-flow: column;
+    margin: 0 0 1em auto;
+}
+
+.contactUs form header h1{
+    font-weight: 100;
+    color: var(--color-black);
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+
+.contactUs form header p{
+    font-size: 1.1em;
+    text-align: left;
+    color: var(--color-black);
+}
+
+.contactUs form .rows{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0;
+}
+
+.contactUs form .rows label{
+    margin: 0.3em 1em;
+    font-size: 1em;
+    font-weight: 100;
+    color: var(--color-black)   ;
+}
+
+.contactUs form .rows label span{
+    color: #f41111;
+    font-size: 1.3em;
+}
+
+.contactUs form .rows input{
+    padding: 1em 2em;
+    font-size: 0.9em;
+}
+
+.contactUs form .rowBar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row;
+}
+
+.contactUs form .rowBar .row{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactUs select {
+    padding: 1em 2em;
+    display: block;
+    width: 100%;
+    border: 1px solid var(--color-black);
+}
+
+.contactUs select:focus{
+    border: 1px solid #f41111;
+}
+
+.contactUs .input input{
+    width: 100%;
+    margin: 0.3em 0;
+    padding: 1em 0;
+    border: none;
+    transition: 0.3s;
+}
+
+.contactUs input{
+    outline: none;
+}
+
+.contactUs .input input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color-black);
+}
+
+.contactUs button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    background-color: #f41111;
+    border: 0;
+    margin: 1em auto;
+}
+
+#click{
+    font-size: 2em;
+}
+
+#bar{
+    display: none;
+    font-size: 2em;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+.localMovingServicesAreas{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.localMovingServicesAreas .rows{
+    padding: 4em 3em;
+    flex-basis: 30%;
+    /* background-color: red; */
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    min-width: 100%;
+}
+
+.localMovingServicesAreas .california{
+    background-color: blue;
+}
+
+.localMovingServicesAreas .california:hover{
+    background-color: hsl(240, 100%, 20%);
+    color: #fff;
+}
+
+.localMovingServicesAreas .texas{
+    background-color: green;
+}
+
+.localMovingServicesAreas .texas:hover{
+    background-color: hsl(120, 100%, 10%);
+    color: #fff;
+}
+
+.localMovingServicesAreas .newYork{
+    background-color: red;
+}
+
+.localMovingServicesAreas .newYork:hover{
+    background-color: hsl(0, 100%, 20%);
+    color: #fff;
+}
